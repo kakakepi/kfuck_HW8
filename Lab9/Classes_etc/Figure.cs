@@ -1,6 +1,6 @@
 namespace Lab91
 {
-    internal abstract class Figure
+    internal abstract class Figure : IGeometricFigure
     {
         internal string figureColor;
         internal FigureStatus isVisible;
@@ -20,7 +20,7 @@ namespace Lab91
             this.figureXPoint = figureXPoint;
             this. figureYPoint = figureYPoint;
         }
-        public string CheckVigureVisiblity()
+        public string CheckFigureVisiblity()
         {
             return $"Статус видимости фигуры: {isVisible}";
         }
