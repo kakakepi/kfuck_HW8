@@ -1,4 +1,4 @@
-namespace Lab91
+namespace Lab9
 {
     internal abstract class Figure : IGeometricFigure
     {
@@ -24,19 +24,19 @@ namespace Lab91
         {
             return $"Статус видимости фигуры: {isVisible}";
         }
-        public void ChangeYCoordinate(double newYCoord)
+        public virtual void ChangeYCoordinate(double newYCoord)
         {
             this.figureYPoint += newYCoord;
         }
-        public void ChangeXCoordinate(double newXCoord)
+        public virtual void ChangeXCoordinate(double newXCoord)
         {
             this.figureXPoint += newXCoord;
         }
-        public void ChangeColor(string newColor)
+        public virtual void ChangeColor(string newColor)
         {
             this.figureColor = newColor;
         }
-        public void GetFigureInfo()
+        public virtual void GetFigureInfo()
         {
             Console.WriteLine($"Координаты фигуры: ({figureXPoint},{figureYPoint}), цвет: {figureColor}, видимость: {isVisible}");
         }

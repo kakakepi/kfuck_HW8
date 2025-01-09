@@ -1,6 +1,6 @@
-namespace Lab91
+namespace Lab9
 {
-    class Rectangle : Point
+    class Rectangle : Point , IGeometricFigure
     {
         double firstSide;
         double secondSide;
@@ -14,9 +14,10 @@ namespace Lab91
                 this.firstSide = firstSide;
                 this.secondSide = secondSide;
             }
-        public string RectangleArea()
+        
+        public override void GetFigureInfo()
         {
-            return $"Площадь прямоугольника: {firstSide*secondSide}";
+            Console.WriteLine($"Площадь прямоугольника: {firstSide*secondSide}, Координаты фигуры: ({figureXPoint},{figureYPoint}), цвет: {figureColor}, видимость: {isVisible}");
         }
     }
 }

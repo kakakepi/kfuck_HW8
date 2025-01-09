@@ -1,4 +1,4 @@
-namespace Lab91    
+namespace Lab9
 {
     interface IGeometricFigure
     {
